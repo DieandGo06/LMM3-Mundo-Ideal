@@ -130,13 +130,13 @@ namespace UnityTemplateProjects
         Vector3 GetInputTranslationDirection()
         {
             Vector3 direction = Vector3.zero;
+            /*
 #if ENABLE_INPUT_SYSTEM
             var moveDelta = movementAction.ReadValue<Vector2>();
             direction.x = moveDelta.x;
             direction.z = moveDelta.y;
             direction.y = verticalMovementAction.ReadValue<Vector2>().y;
 #else
-            /*
             if (Input.GetKey(KeyCode.W))
             {
                 direction += Vector3.forward;
@@ -161,8 +161,9 @@ namespace UnityTemplateProjects
             {
                 direction += Vector3.up;
             }
-            */
+            
 #endif
+            */
             return direction;
         }
         
