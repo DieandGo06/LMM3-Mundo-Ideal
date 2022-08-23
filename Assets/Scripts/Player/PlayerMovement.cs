@@ -4,29 +4,36 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float rotationSpeed;
+    [SerializeField, Range(1, 10)] float speed;
+    CharacterController controller;
+    Vector3 velocity;
+
+
+    private void Awake()
+    {
+        controller = GetComponent<CharacterController>();
+    }
 
     void Update()
     {
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            transform.Translate(new Vector3(speed, 0, 0));
-            //transform.Rotate(new Vector3(0, rotationSpeed, 0));
+        Gravedad();
+        Caminar();
+    }
 
-        }
-        if (Input.GetAxis("Horizontal") < 0)
-        {
-            transform.Translate(new Vector3(-speed, 0, 0));
-            //transform.Rotate(new Vector3(0, -rotationSpeed, 0));
-        }
-        if (Input.GetAxis("Vertical") > 0)
-        {
-            transform.Translate(new Vector3(0, 0, speed));
-        }
-        if (Input.GetAxis("Vertical") < 0)
-        {
-            transform.Translate(new Vector3(0, 0, -speed));
-        }
+    void Caminar()
+    {
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+        //"transform.right" toma la direccion de la flecha en "x" del personaje y "transform.foward" toma la de "z"
+        Vector3 move = transform.right * x + transform.forward * z;
+        controller.Move(move * speed * Time.deltaTime);
+    }
+
+    void Gravedad()
+    {
+        float fuerza = -9.81f;
+        //Formula de velocidad en caida libre (aparentemente): v = (1/2) * g * (t*t)
+        velocity.y += fuerza * Mathf.Pow(Time.deltaTime, 2);
+        controller.Move(velocity);
     }
 }
