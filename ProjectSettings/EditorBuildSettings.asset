@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/Test Diego/Prueba.unity
     guid: 4a5e344fe4db6f5419164a2eb688813b
   - enabled: 1
-    path: Assets/Scenes/Tests/Test Diego/Prueba 2.unity
+    path: Assets/Scenes/Tests/Test Diego/Pruebas de sonido.unity
     guid: acc80f380a93d3b49b28c49ae604fadd
   m_configObjects: {}
