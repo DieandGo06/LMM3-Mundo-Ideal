@@ -18,7 +18,6 @@ public class pruebaRochi : MonoBehaviour
     void Start()
     {
         
-        playerMovementsc.guaranga = 10;
     }
 
     // Update is called once per frame
