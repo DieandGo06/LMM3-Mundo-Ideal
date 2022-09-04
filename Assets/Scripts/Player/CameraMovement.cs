@@ -14,7 +14,7 @@ public class CameraMovement : MonoBehaviour
 
     private void Update()
     {
-        if (canMoveCamera())
+        if (!canMoveCamera())
         {
             //Guarda la posicion del mouse
             Vector2 mouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
