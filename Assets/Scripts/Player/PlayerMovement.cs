@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
      * Importante: Al hacer la build, marca de forma manual que "usaJoystick" es true.
      */
     #endregion
+    
     CharacterController controller;
     Vector3 velocity;
 
