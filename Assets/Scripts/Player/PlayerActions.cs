@@ -21,7 +21,11 @@ public class PlayerActions : MonoBehaviour
     {
         if (productoSeleccionable() != null)
         {
-            if (Input.GetMouseButtonDown(0)) AgarrarProducto(productoSeleccionable());
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (productoSeleccionado == null) AgarrarProducto(productoSeleccionable());
+                else SoltarProducto();
+            }
         }
         MostrarRaycast();
     }
@@ -64,5 +68,13 @@ public class PlayerActions : MonoBehaviour
         RaycastHit hit;
         Physics.Raycast(camara.transform.position, camara.transform.TransformDirection(Vector3.forward), out hit, distMaxPlayerProducto);
         Debug.DrawRay(camara.transform.position, camara.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+    }
+
+    void SoltarProducto()
+    {
+        if (productoSeleccionado.GetComponent<PosicionarProducto>())
+        {
+            productoSeleccionado.GetComponent<PosicionarProducto>().Posicionar();
+        }
     }
 }
