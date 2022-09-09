@@ -17,19 +17,22 @@ public class PlayerActions : MonoBehaviour
         camara = GetComponentInChildren<Camera>().gameObject;
     }
 
-    private void FixedUpdate()
+
+    //FixedUpdate reconocia mal Input.GetMouseButtonDown(0), ni idea porque
+    private void Update()
     {
-        if (productoSeleccionable() != null)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
+            if (productoSeleccionado == null)
             {
-                if (productoSeleccionado == null) AgarrarProducto(productoSeleccionable());
-                else SoltarProducto();
+                if (productoSeleccionable() != null) AgarrarProducto(productoSeleccionable());
             }
+            else SoltarProducto();
         }
         MostrarRaycast();
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Producto")
@@ -38,9 +41,9 @@ public class PlayerActions : MonoBehaviour
             AgarrarProducto(other.gameObject);
         }
     }
+    */
 
 
-    
     void SetAsChildOfCamera(GameObject producto)
     {
         producto.transform.parent = camara.transform;
@@ -59,10 +62,13 @@ public class PlayerActions : MonoBehaviour
     {
         RaycastHit hit;
         Physics.Raycast(camara.transform.position, camara.transform.TransformDirection(Vector3.forward), out hit, distMaxPlayerProducto);
-        if (hit.collider != null) return hit.collider.gameObject;
+        if (hit.collider != null)
+        {
+            if (hit.collider.CompareTag("Producto")) return hit.collider.transform.gameObject;
+        }
         return null;
     }
-    
+
     void MostrarRaycast()
     {
         RaycastHit hit;
@@ -74,7 +80,8 @@ public class PlayerActions : MonoBehaviour
     {
         if (productoSeleccionado.GetComponent<PosicionarProducto>())
         {
-            productoSeleccionado.GetComponent<PosicionarProducto>().Posicionar();
+            productoSeleccionado.GetComponent<PosicionarProducto>().DarPosicionFija();
+            productoSeleccionado = null;
         }
     }
 }

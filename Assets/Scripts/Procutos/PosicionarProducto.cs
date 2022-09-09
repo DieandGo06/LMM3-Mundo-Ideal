@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PosicionarProducto : MonoBehaviour
 {
-    Transform posicionInicial;
-    Transform nuevaPosicion;
-    public bool esAgarrable;
+    public Transform gondolaPosition;
+    public Transform carritoPosition;
 
 
 
@@ -14,46 +13,50 @@ public class PosicionarProducto : MonoBehaviour
     {
         if (transform.parent != null)
         {
-            posicionInicial = transform.parent.transform;
-        }    
+            gondolaPosition = transform.parent.transform;
+        }
     }
 
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Espacio"))
+        if (other.CompareTag("GondolaSpace"))
         {
-            if (other.transform != posicionInicial)
-            {
-                nuevaPosicion = other.transform;
-            }
+            gondolaPosition = other.transform;
+        }
+        if (other.CompareTag("CarritoSpace"))
+        {
+            carritoPosition = other.transform;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Espacio"))
+        if (other.CompareTag("CarritoSpace"))
         {
-            if (other.transform != posicionInicial)
-            {
-                nuevaPosicion = null;
-            }
+            carritoPosition = null;
         }
     }
 
-    public void Posicionar()
+    public void DarPosicionFija()
     {
-        if (nuevaPosicion == null)
+        if (carritoPosition == null)
         {
-            transform.parent = posicionInicial;
-            transform.localPosition = Vector3.zero;
-        } 
+            transform.parent = gondolaPosition;
+            transform.rotation = Quaternion.Euler(Vector3.zero);
+            //float posY = (transform.localScale.y / 2) - (transform.parent.localScale.y / 2);
+            float posY = transform.parent.localScale.y;
+            transform.localPosition = new Vector3(0, posY, 0);
+        }
         else
         {
-            transform.parent = nuevaPosicion;
-            transform.localPosition = nuevaPosicion.position;
+            transform.tag = "Comprado";
+            transform.parent = carritoPosition;
+            transform.rotation = Quaternion.Euler(Vector3.zero);
+            float posY = transform.parent.localScale.y;
+            transform.localPosition = new Vector3(0, posY, 0);
         }
-   
+
     }
 }
