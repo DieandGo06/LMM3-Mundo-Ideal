@@ -10,6 +10,8 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] float distMaxPlayerProducto;
     [SerializeField] bool canGrab;
 
+    [SerializeField] GameObject producto;
+
 
 
     private void Awake()
@@ -30,9 +32,11 @@ public class PlayerActions : MonoBehaviour
             else SoltarProducto();
         }
         MostrarRaycast();
+
+        if (productoSeleccionable() != null) producto = productoSeleccionable();
     }
 
-    /*
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Producto")
@@ -41,7 +45,7 @@ public class PlayerActions : MonoBehaviour
             AgarrarProducto(other.gameObject);
         }
     }
-    */
+    
 
 
     void SetAsChildOfCamera(GameObject producto)
