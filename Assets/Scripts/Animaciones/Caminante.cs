@@ -19,7 +19,7 @@ public class Caminante : MonoBehaviour
     void Start()
     {
         seMueve = true;
-        speed = 2;
+        speed = 0.5f;
     }
 
     // Update is called once per frame
