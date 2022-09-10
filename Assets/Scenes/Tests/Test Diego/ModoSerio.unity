@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1213743075399700183, guid: bd2c6a717d7396042baa4f9ae299089c, type: 3}
+      propertyPath: usaJoystick
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2c6a717d7396042baa4f9ae299089c, type: 3}
 --- !u!1 &937523677

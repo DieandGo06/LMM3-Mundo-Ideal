@@ -5,9 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    private int limiteDeFps = 30;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+        Application.targetFrameRate = limiteDeFps;
     }
 }
