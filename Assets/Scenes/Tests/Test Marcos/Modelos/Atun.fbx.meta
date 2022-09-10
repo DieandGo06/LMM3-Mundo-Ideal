@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ATUN
+    second: {fileID: 2100000, guid: 9a0188f580259c841afbe2e603b31333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: "LataDise\xF1o1"
     second: {fileID: 2100000, guid: ddd35ace4270386449c5e73c6c7a2517, type: 2}
   - first:
@@ -44,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: MetalLata.002
     second: {fileID: 2100000, guid: 5b85defe1b7650f4fa703e3d61a65106, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: atun
+    second: {fileID: 2800000, guid: 4f5caa4558ac99e418282d8946bf3e16, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
