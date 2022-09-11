@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject suelo;
     public GameObject jugador;
     public RawImage corteDeLuz;
+    public RawImage vistaNitida;
 
     private int limiteDeFps = 30;
 

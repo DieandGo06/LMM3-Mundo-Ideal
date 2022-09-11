@@ -11,7 +11,7 @@ public class identificadorDeEfectos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -37,6 +37,12 @@ public class identificadorDeEfectos : MonoBehaviour
 
                     }
 
+                    if (nombreDeProducto == "coquita")
+                    {
+                        AcelerarCarrito();
+                        Tareas.Nueva(5, RalentizarCarrito);
+                    }
+
                 }
             }
         }
@@ -51,5 +57,15 @@ public class identificadorDeEfectos : MonoBehaviour
     void CambiarColor2(GameObject pisito)
     {
         pisito.GetComponent<Renderer>().material.color = Color.black;
+    }
+
+    void RalentizarCarrito()
+    {
+        GameManager.instance.jugador.GetComponent<PlayerMovement>().speed = 2;
+    }
+
+    void AcelerarCarrito()
+    {
+        GameManager.instance.jugador.GetComponent<PlayerMovement>().speed = 20;
     }
 }

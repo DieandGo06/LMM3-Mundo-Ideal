@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
     Vector3 velocity;
 
-    [SerializeField, Range(1, 10)] float speed;
+    [SerializeField, Range(1, 10)] public float speed;
     [SerializeField] bool usaJoystick;
 
     private void Awake()
