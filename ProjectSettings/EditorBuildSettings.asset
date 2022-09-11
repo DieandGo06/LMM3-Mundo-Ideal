@@ -24,4 +24,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/Test Diego/ModoSerio.unity
     guid: 20c8b195009383b41b195d184d0c49ff
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2404b8e18cbc86847a55ffe31ed26eea, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a02ae6004223656498da985cd0bddc29, type: 2}
