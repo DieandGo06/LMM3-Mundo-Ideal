@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject suelo;
 
-    // private int limiteDeFps = 30;
+    private int limiteDeFps = 30;
 
     private void Awake()
     {
@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-     //   Application.targetFrameRate = limiteDeFps;
+     Application.targetFrameRate = limiteDeFps;
     }
 }
