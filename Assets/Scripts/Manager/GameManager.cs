@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject suelo;
+    public GameObject paredes;
+
     public GameObject jugador;
     public RawImage corteDeLuz;
     public RawImage vistaNitida;
