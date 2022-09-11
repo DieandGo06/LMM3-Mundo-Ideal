@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: pauseMenu
+  m_Name: Global Volume Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 6730131466859105398}
---- !u!114 &6730131466859105398
+  - {fileID: 8715680432631843747}
+--- !u!114 &8715680432631843747
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,16 +32,16 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   gaussianStart:
-    m_OverrideState: 0
-    m_Value: 100
+    m_OverrideState: 1
+    m_Value: 1
     min: 0
   gaussianEnd:
-    m_OverrideState: 0
-    m_Value: 30
+    m_OverrideState: 1
+    m_Value: 2
     min: 0
   gaussianMaxRadius:
     m_OverrideState: 0
-    m_Value: 0.967
+    m_Value: 1
     min: 0.5
     max: 1.5
   highQualitySampling:
@@ -49,11 +49,11 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.5
     min: 0.1
   aperture:
-    m_OverrideState: 0
-    m_Value: 5.6
+    m_OverrideState: 1
+    m_Value: 6.2
     min: 1
     max: 32
   focalLength:
