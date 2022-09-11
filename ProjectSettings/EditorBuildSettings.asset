@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.17.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/Test Diego/ModoSerio.unity
     guid: 20c8b195009383b41b195d184d0c49ff
   - enabled: 1
