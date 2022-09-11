@@ -30,17 +30,18 @@ public class identificadorDeEfectosClar : MonoBehaviour
                     {
                         //ACA LE DETERMINO EN QUE SEGUNDO LUEGO DE TOMAR EL EFECTO TIENE QUE PRENDERSE Y APAGARSE LA LOooz!!
                         Tareas.Nueva(0.5f, GlitchOff);
-                        Tareas.Nueva(1f, GlitchOn);
-                        Tareas.Nueva(1.1f, GlitchOff);
-                        Tareas.Nueva(1.3f, GlitchOn);
-                        Tareas.Nueva(1.5f, GlitchOff);
-                        Tareas.Nueva(2f, GlitchOn);
-                        Tareas.Nueva(2.3f, GlitchOff);
-                        Tareas.Nueva(2.5f, GlitchOn);
-                        Tareas.Nueva(2.7f, GlitchOff);
-                        Tareas.Nueva(3f, GlitchOn);
-                        Tareas.Nueva(3.4f, GlitchOff);
-                        Tareas.Nueva(3.6f, GlitchOn);
+                        Tareas.Nueva(0.7f, GlitchOn);
+                        Tareas.Nueva(0.9f, GlitchOff);
+                        Tareas.Nueva(0.99f, GlitchOn);
+                        Tareas.Nueva(1.2f, GlitchOff);
+                        Tareas.Nueva(1.29f, GlitchOn);
+                        Tareas.Nueva(1.4f, GlitchOff);
+                        Tareas.Nueva(1.5f, GlitchOn);
+                        Tareas.Nueva(1.8f, GlitchOff);
+                        Tareas.Nueva(1.95f, GlitchOn);
+                        Tareas.Nueva(2.0f, GlitchOff);
+                        Tareas.Nueva(2.09f, GlitchOn);
+
                     }
 
                     if (nombreDeProducto == "manzana")
@@ -57,7 +58,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
     void GlitchOff () //ESTA ES LA PANTALLA EN NEGRO
     {
         
-        float alpha = Random.Range(0.001f,0.005f); 
+        float alpha = Random.Range(0.003f,0.008f); 
         GameManager.instance.corteDeLuz.GetComponent<RawImage>().color = new Color(0,0,0,alpha);
 
     }
