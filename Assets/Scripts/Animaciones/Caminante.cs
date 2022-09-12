@@ -18,30 +18,38 @@ public class Caminante : MonoBehaviour
     }
     void Start()
     {
-        seMueve = true;
         speed = 0.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        tiempoTranscurrido += Time.deltaTime;
+        if (seMueve)
+        {
+            Marcar();
+            tiempoTranscurrido += Time.deltaTime;
+        }
 
-        if (seMueve) Marcar();
-
-        if (tiempoTranscurrido > tiempoMax)  Detener();
-        
+        if (tiempoTranscurrido > tiempoMax)
+        {
+            Detener();
+        }
     }
 
     void Marcar()
     {
         transform.position = transform.position + Vector3.right * speed * Time.deltaTime;
-
     }
 
     void Detener()
     {
         seMueve = false;
+        GetComponent<TrailRenderer>().emitting = false;
+    }
+
+    public void ActivarCaminante()
+    {
+        seMueve = true;
     }
 
     // Para activar caminante en el script de la lista = gameObject.SetActive(false);
