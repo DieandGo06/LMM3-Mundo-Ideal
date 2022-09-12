@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //IMPORTANTE!!!!
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class identificadorDeEfectos : MonoBehaviour
 {
@@ -9,6 +11,10 @@ public class identificadorDeEfectos : MonoBehaviour
     public bool seEjecutaUnaVez;
     public Caminante caminante;
     public string nombreDeProducto;
+    bool veMal = true;
+
+    DepthOfField dofComponent;
+    float blur = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -45,10 +51,9 @@ public class identificadorDeEfectos : MonoBehaviour
 
                     }
 
-                    if (nombreDeProducto == "manzana")
+                    if (nombreDeProducto == "zanahoria")
                     {
-                        CambiarColor2(GameManager.instance.suelo);
-
+                        veMal = false;
                     }
 
                     if (nombreDeProducto == "coquita")
@@ -56,21 +61,29 @@ public class identificadorDeEfectos : MonoBehaviour
                         AcelerarCarrito();
                         Tareas.Nueva(5, RalentizarCarrito);
                     }
-
                 }
             }
         }
+
+
+        if (!veMal && blur < 20)
+        {
+            MejorarVision(GameManager.instance.globalVolume);
+            blur += Time.deltaTime * 1.5f;
+
+        }
     }
 
-    void CambiarColorPiso (GameObject pisito)
-    {
-        pisito.GetComponent<Renderer>().material.color = Color.red;
-        
-    }
 
-    void CambiarColor2(GameObject pisito)
-    {
-        pisito.GetComponent<Renderer>().material.color = Color.black;
+
+    void MejorarVision(GameObject globalVolume) {
+        Volume volume = globalVolume.GetComponent<Volume>();
+        DepthOfField tmp;
+        if (volume.profile.TryGet<DepthOfField>(out tmp))
+        {
+            dofComponent = tmp;
+        }
+        dofComponent.aperture.value = blur;
     }
 
     void RalentizarCarrito()

@@ -10,7 +10,6 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] float distMaxPlayerProducto;
     [SerializeField] bool canGrab;
 
-    [SerializeField] GameObject lista;
     [SerializeField] GameObject producto;
 
 
@@ -23,7 +22,7 @@ public class PlayerActions : MonoBehaviour
 
     private void Start()
     {
-        AgarrarProducto(lista);
+        //AgarrarProducto(producto);
     }
 
 

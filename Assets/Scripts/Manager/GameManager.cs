@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject jugador;
     public RawImage corteDeLuz;
-    public RawImage vistaNitida;
+    public GameObject globalVolume;
 
     private int limiteDeFps = 30;
 
