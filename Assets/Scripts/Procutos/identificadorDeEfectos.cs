@@ -7,6 +7,7 @@ public class identificadorDeEfectos : MonoBehaviour
 {
     public bool esSaludable;
     public bool seEjecutaUnaVez;
+    public Caminante caminante;
     public string nombreDeProducto;
 
     // Start is called before the first frame update
