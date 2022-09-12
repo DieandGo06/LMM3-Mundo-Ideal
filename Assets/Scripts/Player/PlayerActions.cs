@@ -10,13 +10,20 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] float distMaxPlayerProducto;
     [SerializeField] bool canGrab;
 
+    [SerializeField] GameObject lista;
     [SerializeField] GameObject producto;
+
 
 
 
     private void Awake()
     {
         camara = GetComponentInChildren<Camera>().gameObject;
+    }
+
+    private void Start()
+    {
+        AgarrarProducto(lista);
     }
 
 
