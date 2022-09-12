@@ -10,9 +10,6 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] float distMaxPlayerProducto;
     [SerializeField] bool canGrab;
 
-    [SerializeField] GameObject producto;
-
-
 
 
     private void Awake()
@@ -22,7 +19,7 @@ public class PlayerActions : MonoBehaviour
 
     private void Start()
     {
-        //AgarrarProducto(producto);
+        //AgarrarProducto(productoSeleccionado);
     }
 
 
@@ -39,7 +36,7 @@ public class PlayerActions : MonoBehaviour
         }
         MostrarRaycast();
 
-        if (productoSeleccionable() != null) producto = productoSeleccionable();
+        if (productoSeleccionable() != null) productoSeleccionado = productoSeleccionable();
     }
 
     
@@ -88,10 +85,14 @@ public class PlayerActions : MonoBehaviour
 
     void SoltarProducto()
     {
-        if (productoSeleccionado.GetComponent<PosicionarProducto>())
+        if (productoSeleccionado != null)
         {
-            productoSeleccionado.GetComponent<PosicionarProducto>().SetNewPosition();
-            productoSeleccionado = null;
+            if (productoSeleccionado.GetComponent<PosicionarProducto>())
+            {
+                productoSeleccionado.GetComponent<PosicionarProducto>().SetNewPosition();
+                productoSeleccionado = null;
+            }
         }
+        
     }
 }

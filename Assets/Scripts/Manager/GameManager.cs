@@ -7,10 +7,14 @@ using UnityEngine.Rendering.Universal;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    
+    [Header("Variables Principales")]
+    public GameObject jugador;
+    public GameObject carrito;
+
+    [Header("Referencias a efectos")]
     public GameObject suelo;
     public GameObject paredes;
-
-    public GameObject jugador;
     public RawImage corteDeLuz;
     public GameObject globalVolume;
 

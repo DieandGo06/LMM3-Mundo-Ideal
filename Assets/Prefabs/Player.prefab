@@ -1764,10 +1764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camara: {fileID: 1213743073610203489}
   productoSeleccionado: {fileID: 0}
-  distMinPlayerProducto: 5
+  distMinPlayerProducto: 4
   distMaxPlayerProducto: 10
   canGrab: 0
-  producto: {fileID: 1720553702}
 --- !u!1 &1482024883193776294
 GameObject:
   m_ObjectHideFlags: 0
