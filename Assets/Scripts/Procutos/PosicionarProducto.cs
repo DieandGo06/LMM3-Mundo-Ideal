@@ -25,38 +25,33 @@ public class PosicionarProducto : MonoBehaviour
         {
             gondolaPosition = other.transform;
         }
-        if (other.CompareTag("CarritoSpace"))
+        if (other.CompareTag("Carrito"))
         {
-            carritoPosition = other.transform;
+            if (other.transform.GetComponent<CarritoManager>() != null)
+            {
+                carritoPosition = other.transform.GetComponent<CarritoManager>().GetEmptySpace().transform;
+            }
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("CarritoSpace"))
-        {
-            carritoPosition = null;
-        }
-    }
 
-    public void DarPosicionFija()
+
+    //Se ejecuta en el script PlayerAction
+    public void SetNewPosition()
     {
         if (carritoPosition == null)
         {
             transform.parent = gondolaPosition;
             transform.rotation = Quaternion.Euler(Vector3.zero);
             //float posY = (transform.localScale.y / 2) - (transform.parent.localScale.y / 2);
-            float posY = transform.parent.localScale.y;
-            transform.localPosition = new Vector3(0, posY, 0);
         }
         else
         {
             transform.tag = "Comprado";
             transform.parent = carritoPosition;
             transform.rotation = Quaternion.Euler(Vector3.zero);
-            float posY = transform.parent.localScale.y;
-            transform.localPosition = new Vector3(0, posY, 0);
         }
-
+        float posY = transform.parent.localScale.y;
+        transform.localPosition = new Vector3(0, posY, 0);
     }
 }

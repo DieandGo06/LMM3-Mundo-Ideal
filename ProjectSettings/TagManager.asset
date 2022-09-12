@@ -9,6 +9,7 @@ TagManager:
   - GondolaSpace
   - CarritoSpace
   - Comprado
+  - Carrito
   layers:
   - Default
   - TransparentFX

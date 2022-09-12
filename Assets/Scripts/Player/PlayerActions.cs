@@ -91,7 +91,7 @@ public class PlayerActions : MonoBehaviour
     {
         if (productoSeleccionado.GetComponent<PosicionarProducto>())
         {
-            productoSeleccionado.GetComponent<PosicionarProducto>().DarPosicionFija();
+            productoSeleccionado.GetComponent<PosicionarProducto>().SetNewPosition();
             productoSeleccionado = null;
         }
     }
