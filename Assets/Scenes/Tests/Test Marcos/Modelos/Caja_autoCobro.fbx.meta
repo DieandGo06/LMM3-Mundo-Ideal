@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e230e14139fece3428994c261e6007e0
+guid: d6e4b6c4c5d75ee41b054ad7367e6f6e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,53 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: ATUN
-    second: {fileID: 2100000, guid: 9a0188f580259c841afbe2e603b31333, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: 325abd49990d2ee47967e52f2225ec27, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "LataDise\xF1o1"
-    second: {fileID: 2100000, guid: ddd35ace4270386449c5e73c6c7a2517, type: 2}
+      name: Material.002
+    second: {fileID: 2100000, guid: e6f09847cd6196741b4f852ee561f222, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "LataDise\xF1o1.001"
-    second: {fileID: 2100000, guid: 010c5884f3379e34394566b9490fb7a5, type: 2}
+      name: Material.003
+    second: {fileID: 2100000, guid: d4fcf18701904ec46b457c98fa8a3858, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "LataDise\xF1o1.002"
-    second: {fileID: 2100000, guid: 95b71e3bd82fe154e8d8eb917ffe0dfb, type: 2}
+      name: Material.004
+    second: {fileID: 2100000, guid: 33fe99afb87202f41bd24361e3ea5354, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "LataDise\xF1o2"
-    second: {fileID: 2100000, guid: c877dad4146bb714f87fbfca08ab6c5e, type: 2}
+      name: Material.005
+    second: {fileID: 2100000, guid: 533a6fdbb67d65740bcbeacb9bc82b94, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.034
-    second: {fileID: 2100000, guid: 9e6110db423e538438cf1c9e539834d8, type: 2}
+      name: Material.006
+    second: {fileID: 2100000, guid: 3695858d06c816c4aad64190d6e05759, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MetalLata
-    second: {fileID: 2100000, guid: 704bab76a946f15489e49b73c88247df, type: 2}
+      name: Material.009
+    second: {fileID: 2100000, guid: 52fea65396e2d5d438997ec822892345, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MetalLata.001
-    second: {fileID: 2100000, guid: fa8876058d071e447b2818ffab90915a, type: 2}
+      name: Material.010
+    second: {fileID: 2100000, guid: e7f83e9f2c775804ca7117da2ec19395, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MetalLata.002
-    second: {fileID: 2100000, guid: 5b85defe1b7650f4fa703e3d61a65106, type: 2}
+      name: Material.011
+    second: {fileID: 2100000, guid: 052233e5532c23e458ec9f00511c374b, type: 2}
   - first:
-      type: UnityEngine:Texture2D
+      type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: atun
-    second: {fileID: 2800000, guid: 44773f91bc57666439e970540ff0dd94, type: 3}
+      name: Material.012
+    second: {fileID: 2100000, guid: bd9511cc365371340b8802b56d6a3fa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: a44861406ab896c449e7cc1e91cb0335, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
