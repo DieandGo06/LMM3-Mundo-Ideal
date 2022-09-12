@@ -126,11 +126,13 @@ public class identificadorDeEfectosClar : MonoBehaviour
         float segundos = 4;
         tiempoTranscurrido += Time.deltaTime / segundos;
         GameObject coso = GameManager.instance.paredes.transform.GetChild(1).gameObject;
-        coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido);
+        coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1,tiempoTranscurrido);
 
 
     }
 
+
+    //Luces -----------------------------------------------------------------------------------------
     void GlitchOff () //ESTA ES LA PANTALLA EN NEGRO------------------------------------------------
     {
         
