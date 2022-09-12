@@ -143,6 +143,8 @@ MonoBehaviour:
   esSaludable: 1
   seEjecutaUnaVez: 0
   nombreDeProducto: manzana
+  tiempoMax: 0
+  speed: 0
 --- !u!1 &116330052
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +737,8 @@ MonoBehaviour:
   esSaludable: 0
   seEjecutaUnaVez: 0
   nombreDeProducto: papitas
+  tiempoMax: 5
+  speed: 0
 --- !u!1 &960729231
 GameObject:
   m_ObjectHideFlags: 0
