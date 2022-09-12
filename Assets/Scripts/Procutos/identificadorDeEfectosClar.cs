@@ -17,7 +17,6 @@ public class identificadorDeEfectosClar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AparecerParedSucia();
 
 
     }
@@ -92,6 +91,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
         //float limitador = Mathf.Clamp(aparecer, 0, 1);
         GameObject coso = GameManager.instance.paredes.transform.GetChild(0).gameObject;
         coso.GetComponent<Renderer>().material.color =new Color(1, 1, 1, aparecer);
+        Debug.Log("holi");
     }
   
 }
