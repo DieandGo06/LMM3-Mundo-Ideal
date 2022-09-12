@@ -7,14 +7,16 @@ public class identificadorDeEfectosClar : MonoBehaviour
 {
     public bool esSaludable;
     public bool seEjecutaUnaVez;
+    public bool seEjecutaUnaConstante;
     public string nombreDeProducto;
 
     private float aparecer;
 
     //Para el temporizador de las paredes
-    public float tiempoMax;
+   
     float tiempoTranscurrido;
-    bool apareciendo;
+    bool apareciendoSucia;
+    bool apareciendoLimpia;
     [SerializeField] float speed;
 
 
@@ -29,7 +31,32 @@ public class identificadorDeEfectosClar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!seEjecutaUnaConstante) //PAREDES-------------------------------------------------------------------------
+        {
+
+            if (tiempoTranscurrido < 1 && apareciendoSucia == true || tiempoTranscurrido < 1 && apareciendoLimpia == true)
+            {
+                if (apareciendoSucia == true)
+                {
+                    //tiene que desaparecr el otro
+                    GameManager.instance.paredes.transform.GetChild(1).gameObject.SetActive(false);
+                   
+                    AparecerParedSucia();
+                }
+                if (apareciendoLimpia == true)
+                {
+                    //tiene que desaparecr el otro
+                    GameManager.instance.paredes.transform.GetChild(0).gameObject.SetActive(false);
+                    
+                    AparecerParedLimpia();
+                }
+            }
+            else
+            {
+                
+                seEjecutaUnaConstante = false;
+            }
+        }
         
 
 
@@ -43,11 +70,12 @@ public class identificadorDeEfectosClar : MonoBehaviour
                 {
                     seEjecutaUnaVez = true;
 
-                    if (nombreDeProducto == "papitas")
+                    if (nombreDeProducto == "galletitas") //Las galletitas generan el glitch en la luz
                     {
-                        Tareas.NuevaConDuracion(0, 4, AparecerParedSucia);
 
-                        apareciendo = true;
+                        //Aparece la pared
+                        //apareciendoSucia = true; !!!!!!!!!! en esta entrega no usamos pared sucia, solo limpia
+                       // GameManager.instance.paredes.transform.GetChild(0).gameObject.SetActive(true);
 
                         //ACA LE DETERMINO EN QUE SEGUNDO LUEGO DE TOMAR EL EFECTO TIENE QUE PRENDERSE Y APAGARSE LA LOooz!!
                         Tareas.Nueva(0.5f, GlitchOff);
@@ -62,48 +90,45 @@ public class identificadorDeEfectosClar : MonoBehaviour
                         Tareas.Nueva(1.95f, GlitchOn);
                         Tareas.Nueva(2.0f, GlitchOff);
                         Tareas.Nueva(2.09f, GlitchOn);
+                        Tareas.Nueva(2.11f, GlitchOff);// aca se queda en off
 
                     }
 
-                    if (nombreDeProducto == "manzana")
+                    if (nombreDeProducto == "agua") //El agua mejora el estado de las paredes
                     {
-                        
+                        apareciendoLimpia = true;
+                       
+                        GameManager.instance.paredes.transform.GetChild(1).gameObject.SetActive(true);
+                       
 
                     }
 
                 }
             }
-            if (apareciendo)
-            {
-                AparecerParedSucia();
-                tiempoTranscurrido += Time.deltaTime;
-            }
-
-            if (tiempoTranscurrido > tiempoMax)
-            {
-                Detener();
-            }
         }
     }
-    //Temporizador y logica de las paredes ------------------------------------------
-   
 
-    void Detener()
-    {
-        apareciendo = false;
-        //GetComponent<TrailRenderer>().emitting = false;
-    }
 
-   
+
+    //Paredes ------------------------------------------
     void AparecerParedSucia()
     {
-        
-
-        //aparecer += Time.deltaTime / 4;
-        
+        float segundos = 5;
+        tiempoTranscurrido += Time.deltaTime/segundos;
         GameObject coso = GameManager.instance.paredes.transform.GetChild(0).gameObject;
-        coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido/5);
+        coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido);
+
         
+    }
+
+    void AparecerParedLimpia()
+    {
+        float segundos = 5;
+        tiempoTranscurrido += Time.deltaTime / segundos;
+        GameObject coso = GameManager.instance.paredes.transform.GetChild(1).gameObject;
+        coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido);
+
+
     }
 
     void GlitchOff () //ESTA ES LA PANTALLA EN NEGRO------------------------------------------------
