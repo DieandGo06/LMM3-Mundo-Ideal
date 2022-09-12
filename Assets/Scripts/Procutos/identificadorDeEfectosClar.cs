@@ -113,7 +113,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
     //Paredes ------------------------------------------
     void AparecerParedSucia()
     {
-        float segundos = 5;
+        float segundos = 4;
         tiempoTranscurrido += Time.deltaTime/segundos;
         GameObject coso = GameManager.instance.paredes.transform.GetChild(0).gameObject;
         coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido);
@@ -123,7 +123,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
 
     void AparecerParedLimpia()
     {
-        float segundos = 5;
+        float segundos = 4;
         tiempoTranscurrido += Time.deltaTime / segundos;
         GameObject coso = GameManager.instance.paredes.transform.GetChild(1).gameObject;
         coso.GetComponent<Renderer>().material.color = new Color(1, 1, 1, tiempoTranscurrido);
@@ -134,7 +134,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
     void GlitchOff () //ESTA ES LA PANTALLA EN NEGRO------------------------------------------------
     {
         
-        float alpha = Random.Range(0.003f,0.008f); 
+        float alpha = Random.Range(0.003f,0.005f); 
         GameManager.instance.corteDeLuz.GetComponent<RawImage>().color = new Color(0,0,0,alpha);
 
     }
