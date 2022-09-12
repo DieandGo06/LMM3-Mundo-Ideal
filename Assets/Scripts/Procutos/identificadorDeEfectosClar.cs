@@ -8,16 +8,29 @@ public class identificadorDeEfectosClar : MonoBehaviour
     public bool esSaludable;
     public bool seEjecutaUnaVez;
     public string nombreDeProducto;
+    private float aparecer;
+    private float aparecer1;
+    
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        AparecerParedSucia();
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        
+
+
+
+
         if (!seEjecutaUnaVez)
         {
             if (transform.parent != null)
@@ -28,6 +41,10 @@ public class identificadorDeEfectosClar : MonoBehaviour
 
                     if (nombreDeProducto == "papitas")
                     {
+                        Tareas.NuevaConDuracion(0, 4, AparecerParedSucia);
+                        
+
+
                         //ACA LE DETERMINO EN QUE SEGUNDO LUEGO DE TOMAR EL EFECTO TIENE QUE PRENDERSE Y APAGARSE LA LOooz!!
                         Tareas.Nueva(0.5f, GlitchOff);
                         Tareas.Nueva(0.7f, GlitchOn);
@@ -46,7 +63,7 @@ public class identificadorDeEfectosClar : MonoBehaviour
 
                     if (nombreDeProducto == "manzana")
                     {
-                        CambiarColor2(GameManager.instance.suelo);
+                        
 
                     }
 
@@ -69,8 +86,12 @@ public class identificadorDeEfectosClar : MonoBehaviour
 
     }
 
-    void CambiarColor2(GameObject pisito)
+    void AparecerParedSucia()
     {
-        pisito.GetComponent<Renderer>().material.color = Color.red;
+        aparecer += Time.deltaTime / 4;
+        //float limitador = Mathf.Clamp(aparecer, 0, 1);
+        GameObject coso = GameManager.instance.paredes.transform.GetChild(0).gameObject;
+        coso.GetComponent<Renderer>().material.color =new Color(1, 1, 1, aparecer);
     }
+  
 }
