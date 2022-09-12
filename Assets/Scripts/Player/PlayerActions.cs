@@ -58,11 +58,14 @@ public class PlayerActions : MonoBehaviour
 
     void AgarrarProducto(GameObject producto)
     {
-        SetAsChildOfCamera(producto);
-        producto.transform.localPosition = Vector3.zero;
-        Vector3 nuevaPosicion = Vector3.zero.CambiarZ(distMinPlayerProducto);
-        producto.transform.localPosition = nuevaPosicion;
-        productoSeleccionado = producto;
+        if (productoSeleccionado == null)
+        {
+            SetAsChildOfCamera(producto);
+            producto.transform.localPosition = Vector3.zero;
+            Vector3 nuevaPosicion = Vector3.zero.CambiarZ(distMinPlayerProducto);
+            producto.transform.localPosition = nuevaPosicion;
+            productoSeleccionado = producto;
+        }
     }
 
     GameObject productoSeleccionable()

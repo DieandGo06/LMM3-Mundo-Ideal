@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2605735936268440451
+--- !u!1 &7405352672932103528
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3414502211369060665}
-  - component: {fileID: 1787194848470582940}
-  - component: {fileID: 4551331037970412118}
-  - component: {fileID: 2947613476061523662}
-  - component: {fileID: 2947613476061523663}
-  - component: {fileID: 4495458518363096338}
-  - component: {fileID: -1535315740001887561}
+  - component: {fileID: 7894468927872032722}
+  - component: {fileID: 6494492188937080951}
+  - component: {fileID: 9062902117508064445}
+  - component: {fileID: 944990028596631935}
+  - component: {fileID: 4909782554792387721}
+  - component: {fileID: 688602261921221236}
+  - component: {fileID: 6522394968144458764}
   m_Layer: 0
-  m_Name: Agua
+  m_Name: Zanahoria
   m_TagString: Producto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3414502211369060665
+--- !u!4 &7894468927872032722
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
-  m_LocalRotation: {x: -0, y: -0.0000000037252903, z: 0.06725448, w: 0.99773586}
-  m_LocalPosition: {x: -0.0042266846, y: -0.01236391, z: -0.0000000018626451}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 7405352672932103528}
+  m_LocalRotation: {x: -0.004571267, y: 0.008962243, z: 0.36636314, w: 0.93041754}
+  m_LocalPosition: {x: 0.08113203, y: 0.010884233, z: -0.000020390638}
+  m_LocalScale: {x: 0.8534406, y: 1.6285443, z: 1.2497159}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.713}
---- !u!33 &1787194848470582940
+  m_LocalEulerAnglesHint: {x: -88.427, y: -125, z: -27.024}
+--- !u!33 &6494492188937080951
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
-  m_Mesh: {fileID: -6857689473578963052, guid: 197f6cc34dc483f4687eeba0ca2a96e8, type: 3}
---- !u!23 &4551331037970412118
+  m_GameObject: {fileID: 7405352672932103528}
+  m_Mesh: {fileID: -9083999815007727336, guid: a45334c77d1d33540b2037450fb36a15, type: 3}
+--- !u!23 &9062902117508064445
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
+  m_GameObject: {fileID: 7405352672932103528}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,9 +63,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8db59cd313084f24899085baa60b4c76, type: 2}
-  - {fileID: 2100000, guid: fa92281236cf6dc41951177d0afb1b3e, type: 2}
-  - {fileID: 2100000, guid: 2af6ce406b9047046ad9b9f01ccc072d, type: 2}
+  - {fileID: 2100000, guid: f2cf630b74c1f5f44a8c8b76263c694b, type: 2}
+  - {fileID: 2100000, guid: 11b6902dd35e35b408e1ec6e34a7b472, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &2947613476061523662
+--- !u!54 &944990028596631935
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
+  m_GameObject: {fileID: 7405352672932103528}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -103,26 +102,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &2947613476061523663
+--- !u!65 &4909782554792387721
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
+  m_GameObject: {fileID: 7405352672932103528}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.03, z: 0.053330366}
-  m_Center: {x: -0.00000023795292, y: 0.00000047683716, z: 0.026665183}
---- !u!114 &4495458518363096338
+  m_Size: {x: 0.01967427, y: 0.03406232, z: 0.021581749}
+  m_Center: {x: 0.0000010561988, y: -0.00016607341, z: -0.0009476755}
+--- !u!114 &688602261921221236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
+  m_GameObject: {fileID: 7405352672932103528}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 959dcb6c6b9cb214c8f4b358fae6b2e1, type: 3}
@@ -131,13 +130,13 @@ MonoBehaviour:
   espacioVacio: {fileID: 0}
   gondolaPosition: {fileID: 0}
   carritoPosition: {fileID: 0}
---- !u!114 &-1535315740001887561
+--- !u!114 &6522394968144458764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2605735936268440451}
+  m_GameObject: {fileID: 7405352672932103528}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 191068e36a239f24fbcb2e7126d390cc, type: 3}
@@ -147,5 +146,5 @@ MonoBehaviour:
   seEjecutaUnaVez: 0
   seEjecutaUnaConstante: 0
   caminante: {fileID: 0}
-  nombreDeProducto: agua
+  nombreDeProducto: zanahoria
   speed: 0
