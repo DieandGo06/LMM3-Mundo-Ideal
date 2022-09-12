@@ -8,8 +8,7 @@ public class PlayerActions : MonoBehaviour
     public GameObject productoSeleccionado;
     [SerializeField] float distMinPlayerProducto;
     [SerializeField] float distMaxPlayerProducto;
-    [SerializeField] bool canGrab;
-
+    public LayerMask ignoreThisLayers;
 
 
     private void Awake()
@@ -82,7 +81,7 @@ public class PlayerActions : MonoBehaviour
     void MostrarRaycast()
     {
         RaycastHit hit;
-        Physics.Raycast(camara.transform.position, camara.transform.TransformDirection(Vector3.forward), out hit, distMaxPlayerProducto);
+        Physics.Raycast(camara.transform.position, camara.transform.TransformDirection(Vector3.forward), out hit, distMaxPlayerProducto, ~ignoreThisLayers);
         Debug.DrawRay(camara.transform.position, camara.transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
     }
 

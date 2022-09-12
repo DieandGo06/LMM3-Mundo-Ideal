@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 34735585}
   - component: {fileID: 34735584}
   - component: {fileID: 34735583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 3
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34735581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 103942274}
   - component: {fileID: 103942273}
   - component: {fileID: 103942272}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 4
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103942270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 175758189}
   - component: {fileID: 175758188}
   - component: {fileID: 175758187}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 251062189}
   - component: {fileID: 251062188}
   - component: {fileID: 251062187}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 6
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251062185}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 494877961}
   - component: {fileID: 494877960}
   - component: {fileID: 494877959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 7
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494877957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 613785521}
   - component: {fileID: 613785520}
   - component: {fileID: 613785519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 2
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613785517}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 937523680}
   - component: {fileID: 937523679}
   - component: {fileID: 937523678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 9
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937523677}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 1015599754}
   - component: {fileID: 1015599753}
   - component: {fileID: 1015599752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tachaduraManzana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ GameObject:
   - component: {fileID: 1351513992}
   - component: {fileID: 1351513991}
   - component: {fileID: 1351513990}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 5
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351513988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 1481847059}
   - component: {fileID: 1481847058}
   - component: {fileID: 1666289478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito
   m_TagString: Carrito
   m_Icon: {fileID: 0}
@@ -1002,7 +1002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481847056}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.6, z: 3.8040001}
+  m_LocalPosition: {x: 0, y: -1.06, z: 3.8040001}
   m_LocalScale: {x: 2.4, y: 1.2, z: 2.6036}
   m_Children:
   - {fileID: 1720553703}
@@ -1033,7 +1033,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481847056}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1105,7 +1105,7 @@ GameObject:
   - component: {fileID: 1692665054}
   - component: {fileID: 1692665053}
   - component: {fileID: 1692665052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 1
   m_TagString: CarritoSpace
   m_Icon: {fileID: 0}
@@ -1141,7 +1141,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692665050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 1720553706}
   - component: {fileID: 1720553705}
   - component: {fileID: 1720553704}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lista
   m_TagString: Producto
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720553702}
   m_LocalRotation: {x: 0, y: 0.9659258, z: -0.2588191, w: 0}
-  m_LocalPosition: {x: 0.276, y: 1.068, z: 0.59}
+  m_LocalPosition: {x: 0.276, y: 1.395, z: 0.677}
   m_LocalScale: {x: 0.20833331, y: 0.48, z: 0.030726684}
   m_Children:
   - {fileID: 175758186}
@@ -1296,7 +1296,7 @@ GameObject:
   - component: {fileID: 2050864477}
   - component: {fileID: 2050864476}
   - component: {fileID: 2050864475}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrito Space 8
   m_TagString: Carrito
   m_Icon: {fileID: 0}
@@ -1332,7 +1332,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050864473}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 2138279993}
   - component: {fileID: 2138279995}
   - component: {fileID: 2138279994}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ GameObject:
   - component: {fileID: 1213743073610203491}
   - component: {fileID: 1213743073610203486}
   - component: {fileID: 415786466286026386}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1693,7 +1693,7 @@ GameObject:
   - component: {fileID: 1213743075399700181}
   - component: {fileID: 1213743075399700183}
   - component: {fileID: 836366721}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1766,9 @@ MonoBehaviour:
   productoSeleccionado: {fileID: 0}
   distMinPlayerProducto: 4
   distMaxPlayerProducto: 10
-  canGrab: 0
+  ignoreThisLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1482024883193776294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,7 +1783,7 @@ GameObject:
   - component: {fileID: 4489841564805723902}
   - component: {fileID: 4850778290554405995}
   - component: {fileID: 6547485176965261879}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tachadura4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +1992,7 @@ GameObject:
   - component: {fileID: 5830588620318818155}
   - component: {fileID: 1885348038384632624}
   - component: {fileID: 5388322452669572716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tachadura3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2199,7 +2201,7 @@ GameObject:
   - component: {fileID: 910949560370708413}
   - component: {fileID: 7673262436754193387}
   - component: {fileID: 4404754025050490940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tachadura5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2410,7 @@ GameObject:
   - component: {fileID: 4989449074158993305}
   - component: {fileID: 791283057461626798}
   - component: {fileID: 2443604829947660086}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tachaduraC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2617,7 @@ GameObject:
   - component: {fileID: 1436377640602232373}
   - component: {fileID: 4141641432820621500}
   - component: {fileID: 9050628268282299069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2765,6 +2767,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4bed8c326b437a043acfc46f9fb13e77, type: 3}
       propertyPath: m_Name
       value: Carrito (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4bed8c326b437a043acfc46f9fb13e77, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bed8c326b437a043acfc46f9fb13e77, type: 3}

@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Gravedad();
         Caminar();
+        Debug.Log(inputEntrante("anykey"));
     }
 
     void Caminar()
