@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24647513, g: 0.28234503, b: 0.34570262, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5983,7 +5983,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03957697, y: 0.020000007, z: 0.058875576}
+  m_Size: {x: 0.05, y: 0.03, z: 0.058875576}
   m_Center: {x: 0.0003318061, y: -0.000000059594754, z: 0.01943773}
 --- !u!1001 &404655534
 PrefabInstance:
@@ -17316,9 +17316,9 @@ BoxCollider:
   m_GameObject: {fileID: 1100485780}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.010060196, y: 0.010151444, z: 0.0056370953}
+  m_Size: {x: 0.01, y: 0.01, z: 0.0056370953}
   m_Center: {x: -0.0000016079503, y: -0.000072670184, z: -0.0011144042}
 --- !u!1001 &1102460488
 PrefabInstance:
@@ -27095,7 +27095,7 @@ BoxCollider:
   m_GameObject: {fileID: 1792635321}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.010060196, y: 0.010151444, z: 0.0056370953}
   m_Center: {x: -0.0000016004997, y: -0.000072670184, z: -0.0011144042}
@@ -27782,7 +27782,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03957697, y: 0.020000007, z: 0.058875576}
+  m_Size: {x: 0.05, y: 0.03, z: 0.058875576}
   m_Center: {x: 0.0003318061, y: -0.000000059594754, z: 0.019437747}
 --- !u!1001 &1855776611
 PrefabInstance:
@@ -29757,6 +29757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939169348}
+  - component: {fileID: 1939169349}
   m_Layer: 0
   m_Name: CajonesSandias
   m_TagString: Untagged
@@ -29780,6 +29781,19 @@ Transform:
   m_Father: {fileID: 264828274}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: -90, y: 45, z: 0}
+--- !u!65 &1939169349
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939169347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030122967, y: 0.013046268, z: 0.0042998986}
+  m_Center: {x: -0.00092795864, y: -0.00014918571, z: -2.3932975e-11}
 --- !u!1001 &1940824967
 PrefabInstance:
   m_ObjectHideFlags: 0
