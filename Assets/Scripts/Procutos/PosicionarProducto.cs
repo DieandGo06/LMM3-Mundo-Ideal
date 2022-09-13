@@ -30,6 +30,7 @@ public class PosicionarProducto : MonoBehaviour
             if (other.transform.GetComponent<CarritoManager>() != null)
             {
                 carritoPosition = other.transform.GetComponent<CarritoManager>().GetEmptySpace().transform;
+                SetNewPosition();//Mete el producto de forma automatica cuando toca el cllider de carrito
             }
         }
     }
