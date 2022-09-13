@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Gravedad();
+        //Gravedad();
         Caminar();
     }
 

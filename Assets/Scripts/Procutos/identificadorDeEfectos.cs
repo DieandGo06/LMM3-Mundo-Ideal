@@ -85,6 +85,7 @@ public class identificadorDeEfectos : MonoBehaviour
                         Tareas.Nueva(1.95f, GlitchOn);
                         Tareas.Nueva(2.0f, GlitchOff);
                         Tareas.Nueva(2.09f, GlitchOn);
+                        Tareas.Nueva(2.0f, GlitchOff);
 
                     }
 
@@ -148,7 +149,7 @@ public class identificadorDeEfectos : MonoBehaviour
     void GlitchOff() //ESTA ES LA PANTALLA EN NEGRO------------------------------------------------
     {
 
-        float alpha = Random.Range(0.003f, 0.005f);
+        float alpha = Random.Range(0.85f, 0.95f);
         GameManager.instance.corteDeLuz.GetComponent<RawImage>().color = new Color(0, 0, 0, alpha);
 
     }
